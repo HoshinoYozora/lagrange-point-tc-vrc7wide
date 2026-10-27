@@ -1,8 +1,10 @@
 // Applies a patch with Mesen's own IpsPatcher/UpsPatcher/BpsPatcher code and
 // compares the result byte-for-byte with the expected ROM.
 //
-// Build (copy the patcher sources next to these two files first):
-//   cp ../mesence/Utilities/Patches/{Ips,Ups,Bps}Patcher.{h,cpp} ../mesence/Utilities/CRC32.{h,cpp} .
+// Build (copy the patcher sources from a MesenCE checkout next to these two
+// files first):
+//   M=/path/to/MesenCE/Utilities
+//   cp $M/Patches/{Ips,Ups,Bps}Patcher.h $M/Patches/{Ips,Ups,Bps}Patcher.cpp $M/CRC32.h $M/CRC32.cpp .
 //   g++ -std=c++17 -O2 -w -I. -o patch_check main.cpp IpsPatcher.cpp UpsPatcher.cpp BpsPatcher.cpp CRC32.cpp
 //   ./patch_check <original.nes> <patch> <expected.nes>
 // (pch.h is a stand-in for Mesen's Utilities/pch.h.)
