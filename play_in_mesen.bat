@@ -30,11 +30,14 @@ echo [info] Bundled MesenCE build missing, falling back to an external Mesen.
 
 :external
 set "MESEN=%~1"
-if "%MESEN%"=="" set "MESEN=%HERE%..\..\q-bert\tools\mesen\Mesen.exe"
+if "%MESEN%"=="" set "MESEN=%HERE%MesenCE\Mesen.exe"
 if not exist "%MESEN%" (
   echo [ERROR] Mesen.exe was not found.
-  echo Pass the full path to Mesen.exe as the first argument, e.g.:
+  echo Put the MesenCE build in a "MesenCE" folder next to this script, or pass
+  echo the full path as the first argument, e.g.:
   echo    play_in_mesen.bat "D:\Mesen\Mesen.exe"
+  echo MesenCE with VRC7-Wide:
+  echo    https://github.com/HoshinoYozora/MesenCE/releases/tag/v2.2.1-vrc7wide
   pause
   exit /b 1
 )
