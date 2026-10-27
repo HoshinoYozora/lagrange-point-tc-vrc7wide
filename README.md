@@ -1,6 +1,6 @@
 # Lagrange Point 汉化版 Ver1.1 · 精确模拟器修正补丁
 
-《Lagrange Point》（ラグランジュポイント，Konami 1991）中文汉化版 Ver1.1 只能在模拟
+《Lagrange Point》（Konami 1991）中文汉化版 Ver1.1 只能在模拟
 不够精确的模拟器上运行，在 Mesen 这类高精确度模拟器上无法正常运行。
 
 这个仓库提供让它在精确模拟器上正常运行的修正补丁（ROM 补丁本身，不含模拟器）。
